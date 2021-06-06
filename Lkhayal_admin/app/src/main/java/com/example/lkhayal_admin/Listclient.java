@@ -28,8 +28,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import static com.example.lkhayal_admin.MainActivity.url1;
-
 public class Listclient extends AppCompatActivity {
 
     ListView listView;
@@ -40,7 +38,7 @@ public class Listclient extends AppCompatActivity {
 
 
 public static ArrayList<client>  clientArrayList = new ArrayList<>();
-
+String url = "http://192.168.1.109:8080/LoginRegiter/list.php";
 client c;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,7 +123,7 @@ client c;
         });
     }
     public void listclient(){
-        StringRequest request = new StringRequest(Request.Method.POST,url1, new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.POST,url, new Response.Listener<String>() {
             public void onResponse(String response){
 
 

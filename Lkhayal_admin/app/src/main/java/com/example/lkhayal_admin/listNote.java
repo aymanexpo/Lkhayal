@@ -36,7 +36,7 @@ public class listNote extends AppCompatActivity {
 
 
     public static ArrayList<Note> noteArrayList = new ArrayList<>();
-    String url = "http://192.168.253.1:8080/LoginRegiter/listnots.php";
+    String url = "http://192.168.1.109:8080/LoginRegiter/listnots.php";
     Note n;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

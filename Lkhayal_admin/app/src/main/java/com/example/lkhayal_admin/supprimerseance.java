@@ -27,7 +27,7 @@ public class supprimerseance extends AppCompatActivity {
     TextView Nom;
     Button BtnSupprimerseance;
     private static String id ;
-    private static String URL = "http://192.168.43.183:8080/LoginRegiter/supprimerseance.php";
+    private static String URL = "http://192.168.1.109:8080/LoginRegiter/supprimerseance.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

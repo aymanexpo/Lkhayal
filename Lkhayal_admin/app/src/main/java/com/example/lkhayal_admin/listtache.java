@@ -38,7 +38,7 @@ public class listtache extends AppCompatActivity {
 
 
     public static ArrayList<tache> tacheArrayList = new ArrayList<>();
-
+    String url = "http://192.168.1.109:8080/LoginRegiter/listtache.php";
     tache t;
 
     @Override
@@ -121,7 +121,7 @@ public class listtache extends AppCompatActivity {
         });
     }
     public void listache(){
-        StringRequest request = new StringRequest(Request.Method.POST,MainActivity.url1, new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.POST,url, new Response.Listener<String>() {
             public void onResponse(String response){
 
 

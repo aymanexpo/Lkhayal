@@ -26,7 +26,7 @@ public class modifierclient extends AppCompatActivity {
     Button BtnSave ;
     private String id ;
 
-    private static String URL_UPDATE = "http://192.168.43.183:8080/LoginRegiter/modifier.php";
+    private static String URL_UPDATE = "http://192.168.1.109:8080/LoginRegiter/modifier.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

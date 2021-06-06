@@ -38,6 +38,7 @@ public class listeseance extends AppCompatActivity {
 
 
     public static ArrayList<seance> seanceArrayList = new ArrayList<>();
+    String url = "http://192.168.1.109:8080/LoginRegiter/listseance.php";
     seance s;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,7 +121,7 @@ public class listeseance extends AppCompatActivity {
     });
 }
     public void listseance(){
-        StringRequest request = new StringRequest(Request.Method.POST,MainActivity.urlSeanceliste, new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.POST,url, new Response.Listener<String>() {
             public void onResponse(String response){
 
 

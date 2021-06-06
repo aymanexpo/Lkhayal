@@ -97,7 +97,7 @@ public class ajoutersalarie extends AppCompatActivity {
                             data[4] = tele1;
 
 
-                            PutData putData = new PutData("http://192.168.253.1:8080/LoginRegiter/signup.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.109:8080/LoginRegiter/signup.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();

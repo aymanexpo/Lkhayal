@@ -56,8 +56,8 @@ public class ajouterseance extends AppCompatActivity  {
     public String  id_client= "null" ;
     public String  id_user = "null" ;
 
-    private static String URLclient= "http://192.168.43.183:8080/LoginRegiter/list.php";
-    private static String URL= "http://192.168.43.183:8080/LoginRegiter/listMonitor.php";
+    private static String URLclient= "http://192.168.1.109:8080/LoginRegiter/list.php";
+    private static String URL= "http://192.168.1.109:8080/LoginRegiter/listMonitor.php";
 
 
 
@@ -221,7 +221,7 @@ public class ajouterseance extends AppCompatActivity  {
                         data[5] = comment;
 
 
-                        PutData putData = new PutData("http://192.168.43.183:8080/LoginRegiter/ajouterseance.php", "POST", field, data);
+                        PutData putData = new PutData("http://192.168.1.109:8080/LoginRegiter/ajouterseance.php", "POST", field, data);
                         if (putData.startPut()) {
                             if (putData.onComplete()) {
                                 String result = putData.getResult();

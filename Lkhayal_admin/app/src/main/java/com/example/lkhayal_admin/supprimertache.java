@@ -27,7 +27,7 @@ public class supprimertache extends AppCompatActivity {
     TextView Nom;
     Button Btnsupprimertache;
     private static String id ;
-    private static String URL = "http://192.168.253.1:8080/LoginRegiter/supprimertache.php";
+    private static String URL = "http://192.168.1.109:8080/LoginRegiter/supprimertache.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

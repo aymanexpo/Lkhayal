@@ -49,7 +49,7 @@ public class activity_login extends AppCompatActivity {
                  String[] data = new String[2];
                  data[0] = useremaile;
                  data[1] = userpasswd;
-                 PutData putData = new PutData(MainActivity.url2, "POST", field, data);
+                 PutData putData = new PutData("http://192.168.1.109:8080/LoginRegiter/login.php", "POST", field, data);
                  if (putData.startPut()) {
                      if (putData.onComplete()) {
                          String result = putData.getResult();

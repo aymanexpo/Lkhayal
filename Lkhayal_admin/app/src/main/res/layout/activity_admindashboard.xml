@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginStart="30dp"
-            android:text="name"
+            android:text="Admin"
             android:textColor="@color/green1"
             android:textSize="25dp"
 

@@ -39,7 +39,7 @@ public class ajoutertache extends AppCompatActivity {
     public ArrayList<String> positionlist = new ArrayList<>();
     user utilisateur;
     public String  id_user = "null" ;
-    private static String URL= "http://192.168.150.1:8080/LoginRegiter/listUSER.php";
+    private static String URL= "http://192.168.1.109:8080/LoginRegiter/listUSER.php";
 
 
 

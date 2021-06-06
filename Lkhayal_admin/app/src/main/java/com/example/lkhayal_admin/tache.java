@@ -59,14 +59,17 @@ public class tache {
         this.title = title;
     }
 
-
-
-    public tache(String tasksID, String startDate, String durationMinut, String detail, String title) {
+    public tache(String tasksID, String startDate, String title, String user_Fk, String isDone) {
         this.tasksID = tasksID;
         this.startDate = startDate;
-        this.durationMinut = durationMinut;
-        this.detail = detail;
         this.title = title;
+        this.user_Fk = user_Fk;
+        this.isDone = isDone;
+    }
+
+    public tache(String tasksID, String startDate) {
+        this.tasksID = tasksID;
+        this.startDate = startDate;
     }
 
     public tache(String startDate, String durationMinut, String detail, String title) {
