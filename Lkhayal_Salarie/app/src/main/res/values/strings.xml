@@ -23,4 +23,17 @@
     <string name="seance">La seance sera suprimmer</string>
     <string name="supprimer">Suprimmer</string>
     <string name="ajouternote">ajoutez note</string>
+    <string name="sumNote">tous vos notes</string>
+    <string name="listRemarque">Marques</string>
+    <string name="sumSeance">seances futures</string>
+    <string name="listseance">seances</string>
+    <string name="detailseance">seances</string>
+    <string name="idseance">Id de seances</string>
+    <string name="idsalarie">id de salarié</string>
+    <string name="startdate">date de début</string>
+    <string name="Duree">duree</string>
+    <string name="Description">description</string>
+    <string name="idclient">id de client</string>
+    <string name="username">email</string>
+    <string name="VosseancesFuture">Future seances</string>
 </resources>

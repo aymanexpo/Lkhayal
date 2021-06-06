@@ -31,4 +31,28 @@
     <item name="Btnsupprimerseance" type="id" />
     <item name="cardajouterNote" type="id" />
     <item name="ajouterimg" type="id" />
+    <item name="ajouterclientimg" type="id" />
+    <item name="sumNote" type="id" />
+    <item name="sumNoteint" type="id" />
+    <item name="listenote" type="id" />
+    <item name="Futureseances" type="id" />
+    <item name="sumSeance" type="id" />
+    <item name="sumSeanceint" type="id" />
+    <item name="listeseance" type="id" />
+    <item name="key" type="id" />
+    <item name="idsdeancedetail" type="id" />
+    <item name="idsalarieimg" type="id" />
+    <item name="idsalariedetail" type="id" />
+    <item name="dateimg" type="id" />
+    <item name="startdatedetail" type="id" />
+    <item name="dureimg" type="id" />
+    <item name="Duredetail" type="id" />
+    <item name="descriptionimg" type="id" />
+    <item name="descriptiondetail" type="id" />
+    <item name="idclientimg" type="id" />
+    <item name="idclientdetail" type="id" />
+    <item name="email" type="id" />
+    <item name="ConsulterEmpoie" type="id" />
+    <item name="futureimg" type="id" />
+    <item name="consulterimg" type="id" />
 </resources>

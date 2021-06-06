@@ -15,26 +15,26 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 public class activity_login extends AppCompatActivity {
 
 
-    EditText username, motDePasse;
+    EditText useremail, userpassword;
     Button btnLogin;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        username = findViewById(R.id.username);
-        motDePasse = findViewById(R.id.motDePasse);
+        useremail = findViewById(R.id.username);
+        userpassword = findViewById(R.id.motDePasse);
         btnLogin = findViewById(R.id.btnLogin);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String clientEmail, passwd;
-                clientEmail= username.getText().toString();
-                passwd = motDePasse.getText().toString();
+                String useremaile, userpasswd;
+                useremaile= useremail.getText().toString();
+                userpasswd = userpassword.getText().toString();
 
-                if(!clientEmail.equals("") && !passwd.equals("")){
+                if(!useremaile.equals("") && !userpasswd.equals("")){
 
                     Handler handler = new Handler();
                     handler.post(new Runnable() {
@@ -43,12 +43,12 @@ public class activity_login extends AppCompatActivity {
                             //Starting Write and Read data with URL
                             //Creating array for parameters
                             String[] field = new String[2];
-                            field[0] = "clientEmail";
-                            field[1] = "passwd";
+                            field[0] = "userEmail";
+                            field[1] = "userPasswd";
                             //Creating array for data
                             String[] data = new String[2];
-                            data[0] = clientEmail;
-                            data[1] = passwd;
+                            data[0] = useremaile;
+                            data[1] = userpasswd;
                             PutData putData = new PutData(MainActivity.url1, "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {

@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    static String url = "http://192.168.43.32:8080/LoginRegiter/";
+    static String url = "http://192.168.0.107:8080/LoginRegiter/";
     static String url1 = url+"loginclient.php";
     static String urlSeanceliste = url+"listeseanceclient.php";
     static String urlseancefuture = url+"futureseances.php";

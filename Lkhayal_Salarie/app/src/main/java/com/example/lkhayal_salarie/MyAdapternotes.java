@@ -15,9 +15,9 @@ import java.util.List;
 public class MyAdapternotes extends ArrayAdapter {
 
   Context context;
-  List<com.example.lkhayal_client.Note> arrayListNote;
+  List<com.example.lkhayal_salarie.Note> arrayListNote;
 
-public MyAdapternotes(@NonNull Context context, List<com.example.lkhayal_client.Note> arrayListNote){
+public MyAdapternotes(@NonNull Context context, List<com.example.lkhayal_salarie.Note> arrayListNote){
   super(context, R.layout.activity_list_c,arrayListNote) ;
   this.context = context;
   this.arrayListNote = arrayListNote;
