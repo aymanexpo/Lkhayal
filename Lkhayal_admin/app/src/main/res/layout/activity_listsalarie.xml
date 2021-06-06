@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".listsalarie">
+
+
+    <ImageView
+        android:id="@id/retourimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+    <ImageView
+        android:id="@id/Home"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_baseline_home_24" />
+
+
+
+
+    <ImageView
+        android:id="@id/logodyalna"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Home"
+        android:src="@drawable/logodyalna" />
+
+
+
+
+
+    <ImageView
+        android:id="@id/Power"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:background="@drawable/circle_mov"
+        android:src="@drawable/ic_baseline_power_settings_new_24"/>
+
+
+
+
+
+    <!--Card ajout  -->
+    <androidx.cardview.widget.CardView
+        android:id="@id/cardajouterS"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/logodyalna"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mov"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:id="@id/ajouterimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/ic_flesh"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ajoutersalarie"
+                android:textSize="30dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#DAE1E7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ajouterimg"/>
+
+            <ImageView
+                android:id="@id/ajouterclientimg"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_baseline_person_add_alt_1_24"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@id/sumSalarie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/sumSalarie"
+        android:layout_marginRight="60dp"
+        android:textColor="#DAE1E7"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/cardajouterS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@id/sumSalarieint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        android:text="0"
+        android:textColor="#4DE4C1"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/sumSalarie"
+        app:layout_constraintTop_toBottomOf="@id/cardajouterS"
+
+
+        />
+
+    <TextView
+        android:id="@id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listsalarie"
+        android:textSize="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#DAE1E7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sumSalarieint" />
+    <ListView
+        android:id="@id/listesalarie"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

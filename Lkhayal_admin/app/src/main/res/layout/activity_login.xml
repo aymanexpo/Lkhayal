@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_login">
+
+    <ImageView
+        android:id="@id/OurLogo"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logoapp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@id/Connexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OurLogo"
+        android:layout_marginTop="30dp"
+        android:text="@string/Connexion"
+        android:textColor="#61808B"
+        android:textSize="35sp"
+        />
+
+    <TextView
+        android:id="@id/separateur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OurLogo"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textColor="#F45A68"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:id="@id/email"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintTop_toBottomOf="@id/separateur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/username"
+        app:layout_constraintBottom_toTopOf="@+id/Qfel"
+        app:srcCompat="@drawable/ic_baseline_email_24" />
+
+    <EditText
+        android:id="@id/username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="60dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="#DAE1E7"
+        android:hint="@string/username"
+        android:textColorHint="#DAE1E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/separateur"
+        app:layout_constraintBottom_toTopOf="@id/motDePasse"
+        />
+
+    <ImageView
+        android:id="@id/Qfel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/ic_baseline_lock_24"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/motDePasse"
+        app:layout_constraintBottom_toTopOf="@id/btnLogin"
+        />
+    <EditText
+        android:id="@id/motDePasse"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="60dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="#DAE1E7"
+        android:hint="@string/pwd"
+        android:textColorHint="#DAE1E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Qfel"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintBottom_toTopOf="@id/btnLogin"
+        />
+
+    <Button
+        android:id="@id/btnLogin"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btnstyle"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="@string/Connexion"
+        app:layout_constraintBottom_toTopOf="@id/Lkhayal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/motDePasse" />
+
+    <TextView
+        android:id="@id/Lkhayal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:text="@string/admin"
+        android:textColor="#61808B"
+        android:textSize="30dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="OurLogo" type="id" />
+    <item name="Connexion" type="id" />
+    <item name="separateur" type="id" />
+    <item name="personFace" type="id" />
+    <item name="username" type="id" />
+    <item name="motDePasse" type="id" />
+    <item name="btnLogin" type="id" />
+    <item name="Lkhayal" type="id" />
+    <item name="logodyalna" type="id" />
+    <item name="Power" type="id" />
+    <item name="bienvenue" type="id" />
+    <item name="clientconnect" type="id" />
+    <item name="ConsulterEmploie" type="id" />
+    <item name="emploie" type="id" />
+    <item name="txtCalendar" type="id" />
+    <item name="mesNotes" type="id" />
+    <item name="notes" type="id" />
+    <item name="txtnotes" type="id" />
+    <item name="retourimg" type="id" />
+    <item name="Home" type="id" />
+    <item name="txt1" type="id" />
+    <item name="idclient" type="id" />
+    <item name="idClient" type="id" />
+    <item name="remarque" type="id" />
+    <item name="Btnenregistrernote" type="id" />
+    <item name="attentionimg" type="id" />
+    <item name="msgsuprimer" type="id" />
+    <item name="seanceasupprimer" type="id" />
+    <item name="Btnsupprimerseance" type="id" />
+    <item name="cardajouterNote" type="id" />
+    <item name="ajouterimg" type="id" />
+</resources>

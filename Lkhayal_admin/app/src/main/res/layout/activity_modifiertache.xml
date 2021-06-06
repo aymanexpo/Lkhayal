@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".modifiertache">
+    <ImageView
+        android:id="@id/retourimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+    <ImageView
+        android:id="@id/Home"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_baseline_home_24" />
+
+
+    <ImageView
+        android:id="@id/logodyalna"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Home"
+        android:src="@drawable/logodyalna" />
+
+
+
+
+
+    <ImageView
+        android:id="@id/Power"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:background="@drawable/circle_mov"
+        android:src="@drawable/ic_baseline_power_settings_new_24"/>
+
+    <TextView
+        android:id="@id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/modifiertache"
+        android:textSize="30dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="0dp"
+        android:textColor="#DAE1E7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logodyalna" />
+
+    <ImageView
+        android:id="@id/tachenomimg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        app:srcCompat="@drawable/ic_baseline_notes_24" />
+
+    <EditText
+        android:id="@id/nomtachemodifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:hint="@string/nom"
+        android:textColor="#DAE1E7"
+        android:textColorHint="#DAE1E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tachenomimg"
+        app:layout_constraintTop_toBottomOf="@id/txt1" />
+
+
+    <ImageView
+        android:id="@id/starttacheimg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tachenomimg"
+        app:srcCompat="@drawable/ic_baseline_date_range_24" />
+
+    <EditText
+        android:id="@id/starttachemodifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:hint="@string/startdate"
+        android:textColor="#DAE1E7"
+        android:textColorHint="#DAE1E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/starttacheimg"
+        app:layout_constraintTop_toBottomOf="@id/nomtachemodifier" />
+
+    <ImageView
+        android:id="@id/dureimg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/starttacheimg"
+        app:srcCompat="@drawable/ic_baseline_watch_later_24" />
+
+    <EditText
+        android:id="@id/dureetachemodifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:hint="@string/Duree"
+        android:inputType="text"
+        android:textColor="#DAE1E7"
+        android:textColorHint="#DAE1E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dureimg"
+        app:layout_constraintTop_toBottomOf="@id/starttachemodifier" />
+
+
+
+    <ImageView
+        android:id="@id/detailimg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dureimg"
+        app:srcCompat="@drawable/ic_baseline_details_24" />
+
+    <EditText
+        android:id="@id/detailtachemodifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:hint="@string/detailtache"
+        android:inputType="text"
+        android:textColor="#DAE1E7"
+        android:textColorHint="#DAE1E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/detailimg"
+        app:layout_constraintTop_toBottomOf="@id/dureetachemodifier" />
+
+    <ImageView
+        android:id="@id/userimg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailimg"
+        app:srcCompat="@drawable/ic_baseline_person_add_alt_1_24" />
+
+    <EditText
+        android:id="@id/userFkmodifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:hint="@string/Salarie"
+        android:inputType="text"
+        android:textColor="#DAE1E7"
+        android:textColorHint="#DAE1E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/userimg"
+        app:layout_constraintTop_toBottomOf="@id/detailtachemodifier" />
+
+
+    <Button
+        android:id="@id/Btnenregistrertachemodifier"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="40dp"
+        android:textSize="15dp"
+        android:background="@drawable/btnstyle"
+        android:layout_marginTop="20dp"
+        android:text="@string/modifiertache"
+        app:layout_constraintTop_toBottomOf="@id/userFkmodifier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

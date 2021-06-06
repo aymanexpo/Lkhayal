@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lkhayal_admin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lkhayal_admin"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".detailpresent"></activity>
+        <activity android:name=".presence" />
+        <activity android:name=".listNote" />
+        <activity android:name=".ajouterNote" />
+        <activity android:name=".listC" />
+        <activity android:name=".detailstache" />
+        <activity android:name=".detailseance" />
+        <activity android:name=".detailsalarie" />
+        <activity android:name=".detailclient" />
+        <activity android:name=".supprimertache" />
+        <activity android:name=".supprimerseance" />
+        <activity android:name=".supprimersalarie" />
+        <activity android:name=".supprimerclient" />
+        <activity android:name=".modifiertache" />
+        <activity android:name=".modifiersalarie" />
+        <activity android:name=".modifierseance" />
+        <activity android:name=".modifierclient" />
+        <activity android:name=".listtache" />
+        <activity android:name=".listeseance" />
+        <activity android:name=".listsalarie" />
+        <activity android:name=".Listclient" />
+        <activity android:name=".ajoutertache" />
+        <activity android:name=".ajouterseance" />
+        <activity android:name=".ajoutersalarie" />
+        <activity android:name=".ajouterclient" />
+        <activity android:name=".gestiontache" />
+        <activity android:name=".gestionseances" />
+        <activity android:name=".gastionsalaries" />
+        <activity android:name=".gestionclient" />
+        <activity android:name=".admindashboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity_login" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

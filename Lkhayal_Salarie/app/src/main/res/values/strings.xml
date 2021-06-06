@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Lkhayal_Salarie</string>
+    <string name="Connexion">Connexion</string>
+    <string name="pwd" />
+    <string name="admin">Salarie</string>
+    <string name="res3">res3</string>
+    <string name="res1">res1</string>
+    <string name="Bienvenue">Bienvenue</string>
+    <string name="name">name</string>
+    <string name="todo">todo</string>
+    <string name="Consulter_mon_emploie">Consulter mon emploie</string>
+    <string name="res">res</string>
+    <string name="mesnotes">Mes notes</string>
+    <string name="Consulterseances">consultez vos seances</string>
+    <string name="consultervostaches">consultez vos taches</string>
+    <string name="salarie">salarié</string>
+    <string name="ajouterNote">ajoutez une note</string>
+    <string name="Client">Salarié</string>
+    <string name="client">Salarié</string>
+    <string name="Remarque">Remarques</string>
+    <string name="ajouterremarque">Ajoutez une remarque</string>
+    <string name="msgsupprimerseance">Voulez vous suprimmer cette seance ?</string>
+    <string name="seance">La seance sera suprimmer</string>
+    <string name="supprimer">Suprimmer</string>
+    <string name="ajouternote">ajoutez note</string>
+</resources>
