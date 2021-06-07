@@ -26,7 +26,7 @@ public class modifiertache extends AppCompatActivity {
     Button BtnSave ;
     private String id ;
 
-    private static String URL_UPDATE = "http://192.168.1.109:8080/LoginRegiter/modifiertache.php";
+    private static String URL_UPDATE = MainActivity.urlLis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

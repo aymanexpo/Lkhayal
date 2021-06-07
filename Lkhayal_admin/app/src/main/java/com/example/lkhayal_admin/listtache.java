@@ -38,7 +38,7 @@ public class listtache extends AppCompatActivity {
 
 
     public static ArrayList<tache> tacheArrayList = new ArrayList<>();
-    String url = "http://192.168.1.109:8080/LoginRegiter/listtache.php";
+    String url = MainActivity.urlListSeace;
     tache t;
 
     @Override

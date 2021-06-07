@@ -28,7 +28,7 @@ public class supprimersalarie extends AppCompatActivity {
     TextView Nom;
     Button Btnsupprimersalarie;
     private static String id ;
-    private static String URL = "http://192.168.1.109:8080/LoginRegiter/supprimersalarie.php";
+    private static String URL = MainActivity.urllistces;
 
 
     @Override

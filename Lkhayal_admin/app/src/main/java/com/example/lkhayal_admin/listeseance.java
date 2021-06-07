@@ -38,7 +38,7 @@ public class listeseance extends AppCompatActivity {
 
 
     public static ArrayList<seance> seanceArrayList = new ArrayList<>();
-    String url = "http://192.168.1.109:8080/LoginRegiter/listseance.php";
+    String url = MainActivity.urlListSeance;
     seance s;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

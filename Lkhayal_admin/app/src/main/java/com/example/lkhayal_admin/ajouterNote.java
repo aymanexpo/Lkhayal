@@ -41,9 +41,6 @@ public class ajouterNote extends AppCompatActivity {
     public String  id_client= "null" ;
 
 
-    private static String URLclient= "http://192.168.1.109:8080/LoginRegiter/list.php";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -137,7 +134,7 @@ public class ajouterNote extends AppCompatActivity {
                                                           data[1] = remarq;
 
 
-                                                          PutData putData = new PutData("http://192.168.43.221:8080/LoginRegiter/ajouternote.php", "POST", field, data);
+                                                          PutData putData = new PutData(MainActivity.urlAddNote, "POST", field, data);
                                                           if (putData.startPut()) {
                                                               if (putData.onComplete()) {
                                                                   String result = putData.getResult();
@@ -165,7 +162,7 @@ public class ajouterNote extends AppCompatActivity {
 
     public void listclient(){
 
-        StringRequest request = new StringRequest(Request.Method.POST,URLclient,
+        StringRequest request = new StringRequest(Request.Method.POST,MainActivity.urlList,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

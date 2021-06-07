@@ -38,7 +38,7 @@ public class Listclient extends AppCompatActivity {
 
 
 public static ArrayList<client>  clientArrayList = new ArrayList<>();
-String url = "http://192.168.1.109:8080/LoginRegiter/list.php";
+String url = MainActivity.urlList;
 client c;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -26,7 +26,7 @@ public class modifierseance extends AppCompatActivity {
     private int mYear, mMonth, mDay;
     private Button Btnmodifier;
     private String id ;
-    private static String URL_UPDATE = "http://192.168.1.109:8080/LoginRegiter/modifierseance.php";
+    private static String URL_UPDATE = MainActivity.istSeace;
     private Object Volley;
 
     @Override

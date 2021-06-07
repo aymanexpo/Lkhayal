@@ -39,7 +39,7 @@ public class ajoutertache extends AppCompatActivity {
     public ArrayList<String> positionlist = new ArrayList<>();
     user utilisateur;
     public String  id_user = "null" ;
-    private static String URL= "http://192.168.1.109:8080/LoginRegiter/listUSER.php";
+    private static String URL= MainActivity.urlListUser;
 
 
 
@@ -180,7 +180,7 @@ public class ajoutertache extends AppCompatActivity {
 
 
 
-                                                          PutData putData = new PutData("http://192.168.150.1:8080/LoginRegiter/ajoutertache.php", "POST", field, data);
+                                                          PutData putData = new PutData(MainActivity.urlAddTask, "POST", field, data);
                                                           if (putData.startPut()) {
                                                               if (putData.onComplete()) {
                                                                   String result = putData.getResult();

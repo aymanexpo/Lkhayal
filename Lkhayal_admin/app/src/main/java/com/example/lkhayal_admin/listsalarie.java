@@ -40,7 +40,7 @@ public class listsalarie extends AppCompatActivity {
 
 
         public static ArrayList<user> salarieArrayList = new ArrayList<>();
-        String url = "http://192.168.1.109:8080/LoginRegiter/listUSER.php";
+        String url = MainActivity.urlListUser;
         user u;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

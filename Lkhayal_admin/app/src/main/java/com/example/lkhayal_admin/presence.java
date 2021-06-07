@@ -36,7 +36,7 @@ public class presence extends AppCompatActivity {
 
 
     public static ArrayList<tache> tacheArrayList = new ArrayList<>();
-    String url = "http://192.168.1.109:8080/LoginRegiter/listdesabsences.php";
+    String url = MainActivity.urllistdesabsences;
     tache t;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

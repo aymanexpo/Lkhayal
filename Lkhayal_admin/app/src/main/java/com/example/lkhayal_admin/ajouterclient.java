@@ -98,7 +98,7 @@ public class ajouterclient extends AppCompatActivity {
                             data[4] = tele1;
 
 
-                            PutData putData = new PutData("http://192.168.1.109:8080/LoginRegiter/addclient.php", "POST", field, data);
+                            PutData putData = new PutData(MainActivity.urlAddclient, "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();

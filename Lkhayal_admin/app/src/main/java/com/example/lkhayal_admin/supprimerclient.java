@@ -26,7 +26,7 @@ public class supprimerclient extends AppCompatActivity {
     TextView Nom;
     Button BtnSupprimer;
     private static String id ;
-    private static String URL = "http://192.168.1.109:8080/LoginRegiter/supprimer.php";
+    private static String URL = MainActivity.urlli;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
