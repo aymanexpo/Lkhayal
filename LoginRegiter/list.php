@@ -1,6 +1,6 @@
 <?php
 
-$connection = mysqli_connect("localhost","root","","lberguiandroid");
+$connection = mysqli_connect("localhost","root","","equi");
         
         $result = array();
         $result['clients'] = array();
